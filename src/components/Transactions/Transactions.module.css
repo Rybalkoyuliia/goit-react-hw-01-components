@@ -1,0 +1,25 @@
+.transaction_history {
+  margin: 0 auto 50px;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+thead tr th {
+  width: 250px;
+  background-color: rgb(23, 176, 203);
+  color: white;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+tbody:nth-child(odd) {
+  background-color: rgb(232, 238, 240);
+}
+
+tbody:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
