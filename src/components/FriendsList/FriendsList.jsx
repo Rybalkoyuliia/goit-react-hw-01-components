@@ -3,7 +3,7 @@ import s from './FriendsList.module.css';
 import styled from 'styled-components';
 
 const Span = styled.span`
-  background-color: ${friend => (friend.isOnline ? 'green' : 'red')};
+  background-color: ${friend => (friend.$isOnline ? 'green' : 'red')};
   width: 15px;
   height: 15px;
   border-radius: 50%;
