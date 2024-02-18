@@ -9,7 +9,7 @@ export const Statistics = ({ title, stats }) => {
   };
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>{title}</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.stat_list}>
         {stats.map(item => (
           <li key={item.id} style={{ backgroundColor: getRandomHexColor() }}>
@@ -23,7 +23,7 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
