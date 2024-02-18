@@ -16,7 +16,7 @@ export const FriendsList = ({ friends }) => {
       {friends.map(friend => (
         <li className={s.item} key={friend.id}>
           <div className={s.status}>
-            <Span isOnline={friend.isOnline}> </Span>
+            <Span $isOnline={friend.isOnline}> </Span>
           </div>
           <img
             className={s.avatar}
